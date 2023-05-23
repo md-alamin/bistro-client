@@ -35,7 +35,7 @@ const Header = () => {
 	);
 
 	return (
-		<div className="navbar bg-base-100">
+		<div className="navbar text-white fixed z-10 bg-black bg-opacity-30 max-w-screen-xl mx-auto h-fit">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -61,7 +61,11 @@ const Header = () => {
 						{navItems}
 					</ul>
 				</div>
-				<a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+				<div className="uppercase text-center flex flex-col p-2">
+					<span className="text-3xl font-bold">Bistro boss</span>
+
+					<span className="text-xl font-bold">restaurant</span>
+				</div>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">{navItems}</ul>
