@@ -6,10 +6,14 @@ import CallUs from '../CallUs/CallUs';
 import ChefRecommends from '../ChefRecommends/ChefRecommends';
 import Featured from '../Featured/Featured';
 import Testimonial from '../Testimonial/Testimonial';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
 	return (
 		<>
+			<Helmet>
+				<title>Bistro Boss</title>
+			</Helmet>
 			<Banner></Banner>
 			<Category></Category>
 			<MenuCard></MenuCard>

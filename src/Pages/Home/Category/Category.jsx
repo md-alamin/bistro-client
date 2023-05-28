@@ -8,6 +8,7 @@ import category3 from '../../../assets/home/slide3.jpg';
 import category4 from '../../../assets/home/slide4.jpg';
 import category5 from '../../../assets/home/slide5.jpg';
 import SectionTitle from '../../../components/SectionTitle';
+import './Category.css';
 
 const Category = () => {
 	return (
