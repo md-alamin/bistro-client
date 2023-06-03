@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+a.active{
+    @apply font-bold tracking-wide text-yellow-500 transition-colors duration-200 bg-transparent
+}
+
+.default{
+    @apply font-medium tracking-wide text-gray-200 transition-colors duration-200 hover:text-gray-400 bg-transparent
+  }
+
+  .my-btn{
+    @apply btn btn-outline border-0 border-b-4 hover:bg-black hover:border-b-black
+  }

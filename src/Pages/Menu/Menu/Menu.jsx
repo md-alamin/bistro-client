@@ -34,24 +34,24 @@ const Menu = () => {
 			<SectionTitle subHeading="Don't Miss" heading="Dessert"></SectionTitle>
 			<MenuCategory
 				items={dessert}
-				title="Dessert"
+				title="dessert"
 				coverImg={dessertBg}
 			></MenuCategory>
 
 			<SectionTitle subHeading="Don't Miss" heading="Soup"></SectionTitle>
-			<MenuCategory items={soup} title="Soup" coverImg={soupBg}></MenuCategory>
+			<MenuCategory items={soup} title="soup" coverImg={soupBg}></MenuCategory>
 
 			<SectionTitle subHeading="Don't Miss" heading="Salad"></SectionTitle>
 			<MenuCategory
 				items={salad}
-				title="Salad"
+				title="salad"
 				coverImg={saladBg}
 			></MenuCategory>
 
 			<SectionTitle subHeading="Don't Miss" heading="Pizza"></SectionTitle>
 			<MenuCategory
 				items={pizza}
-				title="Pizza"
+				title="pizza"
 				coverImg={pizzaBg}
 			></MenuCategory>
 		</div>

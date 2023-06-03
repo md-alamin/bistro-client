@@ -1,18 +1,36 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const Header = () => {
 	const navItems = (
 		<>
 			<li>
-				<Link to="/">Home</Link>
+				<NavLink
+					to="/"
+					className={({ isActive }) => (isActive ? 'active' : 'default')}
+				>
+					Home
+				</NavLink>
 			</li>
 
 			<li>
-				<Link to="/menu">Our Menu</Link>
+				<NavLink
+					to="/menu"
+					className={({ isActive }) => (isActive ? 'active' : 'default')}
+				>
+					Our Menu
+				</NavLink>
 			</li>
 			<li>
-				<Link to="/order">Order</Link>
+				<NavLink
+					to="/order/salad"
+					className={({ isActive }) => (isActive ? 'active' : 'default')}
+				>
+					Order
+				</NavLink>
+			</li>
+			<li>
+				<NavLink to="/login">Login</NavLink>
 			</li>
 		</>
 	);
@@ -50,11 +68,8 @@ const Header = () => {
 					<span className="text-xl font-medium">restaurant</span>
 				</div>
 			</div>
-			<div className="navbar-center hidden lg:flex">
+			<div className="navbar-end hidden lg:flex">
 				<ul className="menu menu-horizontal px-1">{navItems}</ul>
-			</div>
-			<div className="navbar-end">
-				<a className="btn">Get started</a>
 			</div>
 		</div>
 	);
